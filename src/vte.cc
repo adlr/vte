@@ -6545,7 +6545,7 @@ Terminal::maybe_end_selection()
 		/* Copy only if something was selected. */
                 if (!m_selection_resolved.empty() &&
 		    m_selecting_had_delta) {
-                        widget_copy(vte::platform::ClipboardType::PRIMARY,
+                        widget_copy(vte::platform::ClipboardType::CLIPBOARD,
                                     vte::platform::ClipboardFormat::TEXT);
 			emit_selection_changed();
 		}
